@@ -1,0 +1,40 @@
+section.first {
+  height: 733px;
+  background-image: url(../images/Hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  /* background-color: #e6ebee; */
+}
+
+.container__inner {
+  width: 451px;
+  margin-left: 10%;
+}
+
+h1.section-title {
+  margin: 0;
+  font-size: 2.666rem;
+  font-weight: bold;
+  line-height: 59px;
+  color: #363F41;
+}
+
+.section-subtitle {
+  font-size: 1.333rem;
+  line-height: 30px;
+  font-family: SourceSansPro;
+  letter-spacing: -1px;
+  color: #363F41;
+}
+
+.first-button {
+  width: 162px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  h1.section-title {
+    font-size: 1.6666rem;
+  }
+}

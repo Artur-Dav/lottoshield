@@ -1,0 +1,35 @@
+button {
+  display: block;
+  width: 100%;
+  min-width: 70px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 0.8888rem;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+button.small {
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.8333rem;
+}
+
+button.mobile-small {
+  height: 26px;
+  line-height: 26px;
+  font-size: 0.666rem;
+}
+
+button.primary-button {
+  border: none;
+  background-color: #72C546;
+  color: #fff;
+}
+
+button.outline-primary-button {
+  border: 1px solid #72C546;
+  background-color: #fff;
+  color: #72C546;
+}

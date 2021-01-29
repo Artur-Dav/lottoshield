@@ -1,0 +1,46 @@
+/* Import fonts */
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat.ttf) format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../fonts/SourceSansPro.ttf) format('truetype');
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-family: SourceSansPro;
+  font-size: 18px;
+}
+
+body {
+  font-family: inherit;
+}
+
+.container {
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 1440px;
+    width: 100%;
+  }
+}
