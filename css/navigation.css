@@ -117,4 +117,7 @@ nav.mobile-nav-bar.open .mobile-nav-bar__menus {
   nav.mobile-nav-bar {
     display: block;
   }
+  section {
+    display: none;
+  }
 }
