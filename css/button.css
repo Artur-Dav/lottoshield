@@ -7,15 +7,20 @@ button {
   border-radius: 30px;
   font-size: 0.8888rem;
   font-family: Montserrat;
+  outline: none !important;
   cursor: pointer;
 }
-
 button.small {
   height: 40px;
   line-height: 40px;
   font-size: 0.8333rem;
 }
 
+button.mobile {
+  height: 32px;
+  line-height: 32px;
+  font-size: 0.8333rem;
+}
 button.mobile-small {
   height: 26px;
   line-height: 26px;
