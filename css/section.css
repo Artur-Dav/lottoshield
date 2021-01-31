@@ -1,10 +1,8 @@
-section.first {
-  height: 733px;
+section.sec-1 {
+  padding-top: 51%;
   background-image: url(../images/Hero.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
-  /* background-color: #e6ebee; */
 }
 
 .container__inner {
@@ -15,6 +13,7 @@ section.first {
 h1.section-title {
   margin: 0;
   font-size: 2.666rem;
+  font-family: Montserrat;
   font-weight: bold;
   line-height: 59px;
   color: #363F41;
@@ -28,13 +27,60 @@ h1.section-title {
   color: #363F41;
 }
 
-.first-button {
+.sec-1-button {
   width: 162px;
   margin-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  section.sec-1 {
+    padding-top: 147%;
+    background-image: url(../images/Hero-Mobile.png);
+    background-position-y: -360px;
+  }
+  section.sec-1 ~ section {
+    margin-top: -360px;
+  }
+  section.sec-1 > div {
+    align-items: flex-start !important;
+    padding-top: 30px;
+  }
+  .container__inner {
+    width: 288px;
+    margin: 0 auto;
+    text-align: center;
+  }
   h1.section-title {
     font-size: 1.6666rem;
+    line-height: 36px;
+  }
+  .section-subtitle {
+    font-size: 1.111rem;
+    line-height: 18px;
+  }
+  .sec-1-button {
+    width: 128px;
+    margin: 37.35px auto 0;
+  }
+  .sec-1-button .primary-button {
+    height: 32px;
+    line-height: 32px;
+    font-size: 0.8333rem;
+  }
+}
+@media screen and (max-width: 766px) {
+  section.sec-1 {
+    background-position-y: -180px;
+  }
+  section.sec-1 ~ section {
+    margin-top: -180px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.sec-1 {
+    background-position-y: 0px;
+  }
+  section.sec-1 ~ section {
+    margin-top: 0px;
   }
 }
