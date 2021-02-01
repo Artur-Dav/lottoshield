@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Artur Davtyan <ad220897@gmail.com>",
   "license": "ISC",
@@ -13,8 +13,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "http": "0.0.1-security",
-    "socket.io": "^3.0.3"
+    "http": "0.0.1-security"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
