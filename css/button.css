@@ -6,7 +6,9 @@ button {
   line-height: 50px;
   border-radius: 30px;
   font-size: 0.8888rem;
+  font-weight: 500;
   font-family: Montserrat;
+  letter-spacing: -0.015em;
   outline: none !important;
   cursor: pointer;
 }
@@ -37,4 +39,12 @@ button.outline-primary-button {
   border: 1px solid #72C546;
   background-color: #fff;
   color: #72C546;
+}
+
+@media screen and (max-width: 992px) {
+  button.primary-button {
+    height: 32px;
+    line-height: 32px;
+    font-size: 0.8333rem;
+  }
 }
