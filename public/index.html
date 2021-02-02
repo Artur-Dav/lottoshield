@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- My css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/slider.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,16 +26,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   <title>LottoShield</title>
 </head>
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <header>
+    <header class="header">
       <!-- Desktop navigation bar -->
       <nav class="desktop-nav-bar w-100 overflow-hidden container d-flex align-items-center justify-content-between">
         <!-- Desktop logo -->
-        <img class="desktop-nav-bar__logo" src="/svgs/Logo.svg" alt="Logo">
+        <img class="desktop-nav-bar__logo" src="svgs/Logo.svg" alt="Logo">
 
         <div class="desktop-nav-bar__menus-buttons d-flex align-items-center">
           <!-- Desktop menus -->
@@ -55,10 +69,10 @@
         <!-- Top -->
         <div class="mobile-nav-bar__top h-100 d-flex align-items-center justify-content-between">
           <div class="equal-box">
-            <img id="burger" class="" src="/svgs/Hamburger Menu.svg" alt="Menu">
+            <img id="burger" class="" src="svgs/Hamburger Menu.svg" alt="Menu">
           </div>
           <div class="equal-box d-flex justify-content-center">
-            <img src="/svgs/Mobile-Logo.svg" alt="Mobile logo">
+            <img src="svgs/Mobile-Logo.svg" alt="Mobile logo">
           </div>
           <div class="equal-box">
             <button class="primary-button mobile-small">Sign up</button>
@@ -99,16 +113,14 @@
     <section class="corr">
       <div class="container container2">
         <div class="headline">
-        <h1>Complete lottery security</h1>
-      </div>
+          <h1>Complete lottery security</h1>
+        </div>
         <div class="row">
           <div class="col-md-6 col-xs-12 headlineblock">
-            <div>
-            <p>Theft of scratcher tickets can result in tens of thousands of dollars in losses before the store owner is aware of the problem; but using handwritten logs and back-office software can be time-consuming and often inaccurate.
-          </p>
-          <p>
-                LottoShield is a patent-pending technology that eliminates the need for handwritten logs. It automatically tracks changes in scratcher inventory and reconciles with sales, alerting you at the first sign of a problem so you can take steps to prevent further loss.</p>
-                </div>
+            <div class="row__text-block">
+              <p>Theft of scratcher tickets can result in tens of thousands of dollars in losses before the store owner is aware of the problem; but using handwritten logs and back-office software can be time-consuming and often inaccurate.</p>
+              <p>LottoShield is a patent-pending technology that eliminates the need for handwritten logs. It automatically tracks changes in scratcher inventory and reconciles with sales, alerting you at the first sign of a problem so you can take steps to prevent further loss.</p>
+            </div>
           </div> 
           <div class="col-md-6 col-xs-12">
             
@@ -231,7 +243,7 @@
       <div class="sec-4__items container row">
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-1.svg" alt="Icon 1">
+            <img class="sec-4__item--icon" src="svgs/Icon-1.svg" alt="Icon 1">
           </div>
           <h4 class="item-title text-center mb-2">Install</h4>
           <p class="item-text mb-2">Connect the LottoShield device to your existing scanner and POS.</p>
@@ -239,7 +251,7 @@
         </div>
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-2.svg" alt="Icon 2">
+            <img class="sec-4__item--icon" src="svgs/Icon-2.svg" alt="Icon 2">
           </div>
           <h4 class="item-title text-center mb-2">Scan</h4>
           <p class="item-text mb-2">Your employees take inventory by scanning your scratchers at the end of their shift using the same scanner they use for sales.</p>
@@ -247,7 +259,7 @@
         </div>
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-3.svg" alt="Icon 3">
+            <img class="sec-4__item--icon" src="svgs/Icon-3.svg" alt="Icon 3">
           </div>
           <h4 class="item-title text-center mb-2">Reconcile</h4>
           <p class="item-text mb-2">LottoShield receives daily reports from your state lottery and checks to make sure your draw sales and lottery payouts match official records.</p>
@@ -255,7 +267,7 @@
         </div>
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-4.svg" alt="Icon 4">
+            <img class="sec-4__item--icon" src="svgs/Icon-4.svg" alt="Icon 4">
           </div>
           <h4 class="item-title text-center mb-2">Investigate</h4>
           <p class="item-text mb-2">Daily emails will show you the overages or shortages on scratchers, draw tickets, and payouts from the previous day.</p>
@@ -281,35 +293,35 @@
         <div class="check-list__items container row m-auto">
           <div class="check-list__item col-lg-4 col-12">
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">No hidden fees</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">$39 per additional location</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Cancel any time</span>
             </div>
           </div>
           <div class="check-list__item col-lg-4 col-12">
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Includes software & device upgrades</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Automatic econciliation with state records</span>
             </div>
           </div>
           <div class="check-list__item col-lg-4 col-12">
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">View all your locations in one place</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Customizable SMS & email alerts</span>
             </div>
           </div>
@@ -327,32 +339,31 @@
     </section>
     <section class="sec-5">
       <h1 class="section-title text-center">Testimonials</h1>
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">1</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">2</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">3</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">4</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">5</div>
+      <div class="carousel-wrapper-desktop container d-none d-lg-block">
+        <div class="carousel-wrapper-desktop__inner w-100">
+          <div class="w-100 h-100 position-absolute top-0 left-0">
+            <div class="d-flex h-100 align-items-center justify-content-between">
+              <div class="secondary-block carousel-block">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p>
+              </div>
+              <div class="primary-block carousel-block">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p>
+              </div>
+              <div class="secondary-block carousel-block">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      </div>
+      <div class="carousel-wrapper d-lg-none d-block container m-auto">
+        <div class="center">
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+        </div>
       </div>
     </section>
 
@@ -418,6 +429,59 @@
        
     </div>
     </section>
+
+    <section class="contact">
+      <div class="container2">
+        <h1>Still have questions?</h1>
+        <div class="row contact_size">
+          <div class="col-md-6 address">
+            <p>Interested in a demo or just want to find out more? Contact us and our team will be happy to get back to you.</p>
+            <h4>Address</h4>
+            <span>110 Ryan Industrial Ct.,
+              San Ramon, California 9458</span>
+                  <h4>Phone</h4>
+            <span>+1(818)674-2128</span>
+                  <h4>Email</h4>
+            <span>sales@lottoshield.com</span>
+          </div>
+          <div class="col-md-6 form_contact">
+            <h2>Contact us</h2>
+            <input type="text" name="" placeholder="First name"> 
+            <input type="text" name="" placeholder="Last name" class="name"> 
+            <input type="email" name="" placeholder="Email"> 
+            <input type="number" name="" placeholder="Phone"> 
+            <textarea placeholder="Message"></textarea>
+  
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <footer>
+    <div class="container footer_container">
+      <div class="row">
+        <div class="col-md-4 d-flex justify-content-start align-items-center">
+          <h4><a href="privacy.html">Privacy Policy</a></h4>
+          <h4 class="foot"><a href="terms.html">Website Terms of use</a></h4>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <img src="images/LS Icon.png" width="78">
+        </div>
+        <div class="col-md-4 d-flex justify-content-end align-items-center">
+          <h4>Privacy Policy</h4>
+          <h4 class="foot">Website Terms of use</h4>
+        </div>
+      </div>
+    </div>
+    <div class=" d-flex icon justify-content-between">
+      <img src="images/fb.png">
+      <img src="images/twitter.png">
+      <img src="images/in.png">
+      <img src="images/Ellipse.png">
+    </div>
+    <p>© LottoShield, 2020</p>
+  </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -436,23 +500,30 @@
 })
   </script>
   <script src="/js/script.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
   <script>
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    $('.center').slick({
+      centerMode: true,
+      centerPadding: '33px',
+      slidesToShow: 3,
+      arrows: false,
+      cssEase: 'ease',
+      fade: false,
+      responsive: [
+        {
+          breakpoint: 1050,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        },
+      ]
     })
   </script>
 </body>

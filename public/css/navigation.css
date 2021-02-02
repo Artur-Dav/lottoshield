@@ -1,4 +1,15 @@
 /* Desktop navigation bar */
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+  background-color: #fff;
+}
+.sec-1 {
+  margin-top: 82px;
+}
 nav.desktop-nav-bar {
   height: 82px;
   padding: 0 50px;
@@ -115,5 +126,8 @@ nav.mobile-nav-bar.open .mobile-nav-bar__menus {
   nav.mobile-nav-bar {
     display: block;
     z-index: 100;
+  }
+  .sec-1 {
+    margin-top: 56px;
   }
 }

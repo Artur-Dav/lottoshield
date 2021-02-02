@@ -93,7 +93,7 @@ h1.section-title {
   right: -28px;
   width: 54px;
   height: 24px;
-  background-image: url(/svgs/Arrow.svg);
+  background-image: url(../svgs/Arrow.svg);
   background-repeat: no-repeat;
 }
 
@@ -218,6 +218,9 @@ span.check-list-title {
 
 .sec-5 {
   padding: 90px 0 0 0;
+}
+.sec-5 .section-title {
+  margin-bottom: 78px;
 }
 
 .swiper-container {
@@ -351,6 +354,9 @@ span.check-list-title {
 
   .sec-5 {
     padding: 27px 0 0 0;
+  }
+  .sec-5 .section-title {
+    margin-bottom: 18px;
   }
 }
 @media screen and (max-width: 767px) {
