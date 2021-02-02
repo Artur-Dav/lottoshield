@@ -88,6 +88,16 @@
   transform: scale(1.2176, 1);
 }
 
+@media screen and (min-width: 1440px) {
+  .primary-block p {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .secondary-block p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .center-box {
     height: 339px !important;
