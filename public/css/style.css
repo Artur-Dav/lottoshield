@@ -480,6 +480,7 @@ footer>p{
   }
   section.contact .address p {
     width: 100%;
+    text-align: center;
   }
   .contact_size div.form_contact input, .contact_size div.form_contact textarea {
     max-width: 100%;
