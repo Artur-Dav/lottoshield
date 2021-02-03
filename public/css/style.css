@@ -20,6 +20,7 @@
 html {
   font-family: SourceSansPro;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,11 +74,10 @@ ul li {
  }
  
  .fast{
-   max-width: 565px;
-   width: 100%;
-   box-shadow: 10px 10px 30px 5px rgba(241, 241, 241, 0.76);
- border-radius: 10px;
- margin-bottom: 97px;
+  max-width: 565px;
+  width: 100%;
+  box-shadow: 10px 10px 30px 5px rgba(241, 241, 241, 0.76);
+  border-radius: 10px;
  }
  
  
@@ -115,6 +115,9 @@ ul li {
   width: 100%!important;
   margin: 0 auto;
  }
+.container-2-row {
+  margin-bottom: 97px;
+}
  .container2 .icons-block {
    padding: 0 18%;
  }
@@ -275,12 +278,11 @@ ul li {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 .contact{
   background: #E6ECEE;
-  padding: 60px 0 120px;
-  margin-top: 99px;
+  padding: 159px 0 120px;
 }
 .address{
 margin-top: 49px;
@@ -496,6 +498,9 @@ footer>p{
   .row__text-block {
     padding: 0 30px;
     text-align: center;
+  }
+  .container-2-row {
+    margin-bottom: 80px;
   }
   .C-Store .container2 h1 {
     font-size: 20px;

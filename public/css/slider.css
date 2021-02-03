@@ -82,6 +82,9 @@
 .slide-dots li.slick-active button::before {
   background-color: #67A681;
 }
+.slick-dotted.slick-slider {
+  margin-bottom: 0px !important;
+}
 .center-box {
   margin: 18px 49px 23px;
   padding: 45px 20px;

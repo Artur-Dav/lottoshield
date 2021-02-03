@@ -8,3 +8,7 @@ const toggleMenu = () => {
 
 // Event listeners
 menuBurger.addEventListener('click', toggleMenu)
+
+document.addEventListener('click', e => {
+  e.target.classList.contains('mobile-nav-bar__menus--link') && toggleMenu()
+})
