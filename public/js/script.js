@@ -1,26 +1,22 @@
-const menuBurger = document.querySelector('#burger')
-const desktopSliderSecondaryBlocks = document.querySelectorAll('.secondary-block')
-const desktopSliderPrimaryBlock = document.querySelector('.primary-block')
-
 // Functions
 const toggleMenu = () => {
   document.querySelector('.mobile-nav-bar').classList.toggle('open')
 }
 
 // Event listeners
-menuBurger.addEventListener('click', toggleMenu)
+document.querySelector('#burger').addEventListener('click', toggleMenu)
 
 document.addEventListener('click', e => {
   e.target.classList.contains('mobile-nav-bar__menus--link') && toggleMenu()
 })
 
-desktopSliderSecondaryBlocks.forEach(el => {
+document.querySelectorAll('.secondary-block').forEach(el => {
   el.addEventListener('mouseenter', e => {
     el.style.transform = 'scale(1.35)'
-    desktopSliderPrimaryBlock.style.transform = 'scale(0.75)'
+    document.querySelector('.primary-block').style.transform = 'scale(0.75)'
   })
   el.addEventListener('mouseleave', e => {
     el.style.transform = 'scale(1)'
-    desktopSliderPrimaryBlock.style.transform = 'scale(1)'
+    document.querySelector('.primary-block').style.transform = 'scale(1)'
   })
 })
