@@ -1,4 +1,6 @@
-const mobileMenu = document.querySelector('.mobile-nav-bar')
+if (!mobileMenu) {
+  const mobileMenu = document.querySelector('.mobile-nav-bar')
+}
 const menuBurger = document.querySelector('#burger')
 const desktopSliderSecondaryBlocks = document.querySelectorAll('.secondary-block')
 const desktopSliderPrimaryBlock = document.querySelector('.primary-block')
