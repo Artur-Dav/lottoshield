@@ -1,13 +1,10 @@
-if (!mobileMenu) {
-  const mobileMenu = document.querySelector('.mobile-nav-bar')
-}
 const menuBurger = document.querySelector('#burger')
 const desktopSliderSecondaryBlocks = document.querySelectorAll('.secondary-block')
 const desktopSliderPrimaryBlock = document.querySelector('.primary-block')
 
 // Functions
 const toggleMenu = () => {
-  mobileMenu.classList.toggle('open')
+  document.querySelector('.mobile-nav-bar').classList.toggle('open')
 }
 
 // Event listeners
