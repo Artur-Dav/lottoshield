@@ -1,3 +1,4 @@
+console.log('Qani angam a')
 // Functions
 const toggleMenu = () => {
   document.querySelector('.mobile-nav-bar').classList.toggle('open')
