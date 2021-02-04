@@ -92,7 +92,7 @@ ul li {
  
 .fast_block {
   display: flex;
-  padding: 20px;
+  padding: 20px 30px;
   border-bottom: 1px solid #E5E6E6;
   flex-wrap: wrap;
 }
@@ -519,7 +519,7 @@ footer>p{
     max-width: 300px;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     padding: 20px;
   }
   section.Questions {
