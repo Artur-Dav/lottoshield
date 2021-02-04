@@ -512,6 +512,14 @@ footer>p{
     font-size: 30px;
     line-height: 37px;
   }
+  .C-Store.container-fluid .container2 .s1 {
+    justify-content: center !important;
+  }
+  .C-Store.container-fluid .container2 img {
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+  }
   section.Questions {
     padding-bottom: 32px;
   }
