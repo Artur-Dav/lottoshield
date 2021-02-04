@@ -1,3 +1,4 @@
+console.log(1)
 // Functions
 // const toggleMenu = () => {
 //   document.querySelector('.mobile-nav-bar').classList.toggle('open')
