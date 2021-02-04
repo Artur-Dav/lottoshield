@@ -1,14 +1,15 @@
 console.log('Qani angam a')
 // Functions
-const toggleMenu = () => {
-  document.querySelector('.mobile-nav-bar').classList.toggle('open')
-}
+// const toggleMenu = () => {
+//   document.querySelector('.mobile-nav-bar').classList.toggle('open')
+// }
 
 // Event listeners
-document.querySelector('#burger').addEventListener('click', toggleMenu)
+// document.querySelector('#burger').addEventListener('click', toggleMenu)
+document.querySelector('#burger').addEventListener('click', () => document.querySelector('.mobile-nav-bar').classList.toggle('open'))
 
 document.addEventListener('click', e => {
-  e.target.classList.contains('mobile-nav-bar__menus--link') && toggleMenu()
+  e.target.classList.contains('mobile-nav-bar__menus--link') && document.querySelector('.mobile-nav-bar').classList.toggle('open')
 })
 
 document.querySelectorAll('.secondary-block').forEach(el => {
