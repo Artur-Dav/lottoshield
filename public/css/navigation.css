@@ -62,6 +62,10 @@ nav.mobile-nav-bar {
   height: 56px;
 }
 
+.mobile-nav-bar__logo {
+  width: 40px;
+}
+
 /* If menu open */
 nav.mobile-nav-bar.open #burger {
   transform: rotate(90deg);

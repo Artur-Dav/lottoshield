@@ -20,12 +20,11 @@
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 
   <!-- Slick -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -47,7 +46,7 @@
         <div class="desktop-nav-bar__menus-buttons d-flex align-items-center">
           <!-- Desktop menus -->
           <ul class="desktop-nav-bar__menus--list d-flex align-items-center">
-            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#">About</a></li>
+            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#about">About</a></li>
             <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#pricing">Pricing</a></li>
             <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#review">Review</a></li>
             <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#faq">FAQ</a></li>
@@ -75,7 +74,7 @@
           </div>
           <div class="equal-box d-flex justify-content-center">
             <a href="./index.html">
-              <img src="svgs/Mobile-Logo.svg" alt="Mobile logo">
+              <img class="mobile-nav-bar__logo" src="svgs/Mobile-Logo.svg" alt="Mobile logo">
             </a>
           </div>
           <div class="equal-box">
@@ -87,7 +86,7 @@
         <div class="mobile-nav-bar__menus">
           <div class="mobile-nav-bar__menus--inner h-100">
             <ul class="mobile-nav-bar__menus--list">
-              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#">About</a></li>
+              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#about">About</a></li>
               <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#pricing">Pricing</a></li>
               <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#faq">FAQ</a></li>
               <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#contact">Contact</a></li>
@@ -112,8 +111,8 @@
           </div>
         </div>
       </div>
+      <div class="position-absolute" id="about"></div>
     </section>
-
     <section class="corr">
       <div class="container container2">
         <div class="headline">
@@ -128,33 +127,33 @@
           </div> 
           <div class="col-md-6 col-xs-12">
             <div class="fast">
-            <div class="fast_block">
-              <div>
-              <img src="images/Icon_Fast.png" width="85">
-            </div>
-              <div>
-              <h4>Fast</h4>
-              <p>Takes less than 5 minutes to install, connects to your existing POS system,  and automates detailed daily audits.</p>
-            </div>
-            </div>
               <div class="fast_block">
-              <div>
-              <img src="images/Icon_Smart.png" width="85">
-            </div>
-              <div>
-              <h4>Smart</h4>
-              <p>Automated monitoring of stockroom packs, draw sales, and payouts. Pinpoint discrepancies from anywhere,  all in one comprehensive dashboard.</p>
-            </div>
-            </div>
+                <div>
+                  <img src="svgs/Fast_icon.svg" height="52">
+                </div>
+                <div>
+                  <h4>Fast</h4>
+                  <p>Takes less than 5 minutes to install, connects to your existing POS system,  and automates detailed daily audits.</p>
+                </div>
+              </div>
+              <div class="fast_block">
+                <div>
+                  <img src="svgs/Smart_icon.svg" height="52">
+                </div>
+                <div>
+                  <h4>Smart</h4>
+                  <p>Automated monitoring of stockroom packs, draw sales, and payouts. Pinpoint discrepancies from anywhere,  all in one comprehensive dashboard.</p>
+                </div>
+              </div>
               <div class="fast_block fast_blocklast">
-              <div>
-              <img src="images/Icon_Reliable.png" width="85">
-            </div>
-              <div>
-              <h4>Reliable</h4>
-              <p>Automatic reconciliation with state lottery. Full support for <span class="security_bold">Gilbarco and Verifone POS systems. </span>Software updates included with your subscription.</p>
-            </div>
-            </div>
+                <div>
+                  <img src="svgs/Reliable_icon.svg" height="52">
+                </div>
+                <div>
+                  <h4>Reliable</h4>
+                  <p>Automatic reconciliation with state lottery. Full support for <span class="security_bold">Gilbarco and Verifone POS systems. </span>Software updates included with your subscription.</p>
+                </div>
+              </div>
           </div>
           </div> 
         </div>
@@ -271,7 +270,7 @@
         </div>
         <div class="sec-4__footer">
           <p class="sec-4__footer--text text-center">Subscription includes one register in one location. Add on registers in the same store for $10, or add a new location for $39 more.</p>
-          <p class="sec-4__footer--text text-center">You can cancel at any time. Just contact our support team at <span class="email">sales@lottoshield.com</span> to stop payments and send back your device.</p>
+          <p class="sec-4__footer--text text-center">You can cancel at any time. Just contact our support team at <a class="email" href="mailto: sales@lottoshield.com">sales@lottoshield.com</a> to stop payments and send back your device.</p>
         </div>
       </div>
     </section>
@@ -303,8 +302,6 @@
           <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
           <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
           <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
-          <!-- <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
-          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div> -->
         </div>
       </div>
     </section>
@@ -333,7 +330,7 @@
         Can I track packs that are in the stock room?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          Yes. LottoShield automatically checks your state lottery report every day. If there are activated packs that are not on the sales floor (i.e. missing from the stock room) you will be notified.
         </div>
       </div>
         <div class="accordion-wrapper">
@@ -341,7 +338,7 @@
           How will I get notified if there's an issue?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          Every morning you'll receive an email summary of the previous day highlighting any issues. You can also customize to be notified by SMS or email right away if we detect an issue.
         </div>
       </div>
         <div class="accordion-wrapper">
@@ -349,7 +346,7 @@
           How can I investigate an issue?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          LottoShield provides a time frame during which the loss happened. You can check your security footage during this period to find the cause of the discrepancy and take action to prevent further loss.
         </div>
       </div>
         <div class="accordion-wrapper">
@@ -357,7 +354,7 @@
           What if an issue gets resolved?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          You can easily click 'Resolve' next to any item on a report and the amount will be removed from your monthly totals.
         </div>
       </div>
        
@@ -396,11 +393,11 @@
         </div>
         <div class="icons-block d-lg-none row ">
           <div class="col-6 d-flex justify-content-center flex-column">
-            <img src="svgs/call.svg" alt="Call">
+            <a href="tel: +18186742128"><img src="svgs/call.svg" alt="Call"></a>
             <h4 class="icons-block__text text-center">Call</h4>
           </div>
           <div class="col-6 d-flex justify-content-center flex-column">
-            <img src="svgs/mail.svg" alt="Mail">
+            <a href="mailto: sales@lottoshield.com"><img src="svgs/mail.svg" alt="Mail"></a>
             <h4 class="icons-block__text text-center">Email</h4>
           </div>
         </div>
@@ -415,7 +412,7 @@
           <h4 class="foot"><a href="terms.html">Website Terms of use</a></h4>
         </div>
         <div class="row-elem col-md-4 d-flex col-xs-pull-12 justify-content-center align-items-center">
-          <img src="images/LS Icon.png" width="78">
+          <img class="footer_container-logo" src="svgs/Mobile-Logo.svg">
         </div>
         <div class="row-elem col-md-4 d-flex col-xs-push-12 justify-content-end align-items-center">
           <h4><a href="#">Help Desk</a></h4>
@@ -424,10 +421,10 @@
       </div>
     </div>
     <div class=" d-flex icon justify-content-between">
-      <img src="images/fb.png">
-      <img src="images/twitter.png">
-      <img src="images/in.png">
-      <img src="images/Ellipse.png">
+      <a href="https://www.facebook.com/lottoshield" target="_blank"><img src="svgs/fb.svg"></a>
+      <a href="https://twitter.com/lottoshield" target="_blank"><img src="svgs/twitter.svg"></a>
+      <a href="https://www.linkedin.com/company/lottoshield" target="_blank"><img src="svgs/linkedin.svg"></a>
+      <a href="https://www.youtube.com/channel/UCWok1BgLRgyKeVDiRkAl6IA" target="_blank"><img src="svgs/youtube.svg"></a>
     </div>
     <p>© LottoShield, 2020</p>
   </footer>

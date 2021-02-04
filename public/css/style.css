@@ -18,13 +18,17 @@
 }
 
 html {
-  font-family: SourceSansPro;
+  font-family: "Source Sans Pro";
   font-size: 18px;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: inherit;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .container {
@@ -47,8 +51,9 @@ ul li {
  }
  
  .container__inner span{
- font-family: 'SourceSansPro', sans-serif;
-   font-weight: lighter;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  letter-spacing: -0.015em;
  }
  
  .headline h1,.step h1, .Questions h1, .contact h1{
@@ -66,11 +71,15 @@ ul li {
    display: flex;
   }
  .headlineblock p{
-   max-width:488px;
-   width: 100%;
-   color: #363F41;
-   font-size: 16px;
-   font-weight: lighter;
+  max-width:488px;
+  width: 100%;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+  color: #363F41;
  }
  
  .fast{
@@ -81,18 +90,26 @@ ul li {
  }
  
  
- .fast_block{
-   display: flex;
-   padding: 20px;
-   border-bottom: 1px solid #E5E6E6;
-   flex-wrap: wrap;
- 
- }
+.fast_block {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #E5E6E6;
+  flex-wrap: wrap;
+}
+.fast_block div:last-child {
+  margin-left: 20px;
+}
  
  .fast_block p{
-   max-width: 407px;
- width: 100%;
-   letter-spacing: -1.5%;
+  max-width: 407px;
+  width: 100%;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+  color: #363F41;
  }
  .fast_block h4{
    font-size: 16px;
@@ -196,11 +213,13 @@ ul li {
  }
  
  
- .accordion-wrapper 
- {
-   position: relative;
-   margin-bottom: .5rem;
- }
+.accordion-wrapper {
+  position: relative;
+  margin-bottom: .5rem;
+}
+.accordion-wrapper:last-child {
+  margin-bottom: 0;
+}
  .acc-head
  {
    position: relative;
@@ -236,33 +255,39 @@ ul li {
      top: 0!important;
  }
  .accord-bg{
-     background-color:#FFF!important; 
-     border:none;
-     color: #363F41;
-     font-size: 20px;
-     font-weight: bold;
-   
- 
+  background-color: transparent; 
+  border:none;
+  color: #363F41;
+  font-size: 20px;
+  font-weight: bold;
+
  }
  .accordion-wrapper{
-   padding: 19px 45px;
-     box-shadow: 10px 10px 30px 5px rgba(241, 241, 241, 0.76);
-     border-radius: 10px;
+  padding: 19px 45px;
+  box-shadow: 10px 10px 30px 5px rgba(241, 241, 241, 0.76);
+  border-radius: 10px;
  }
  .accord-bg1{
-    
-     background-color:#FFF!important; 
-     font-size: 18px;
-      font-family: SourceSansPro;
-      font-weight: lighter;
-      color: #363F41;
+  background-color:#FFF!important; 
+  font-size: 18px;
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  color: #363F41;
  }
- .acc-head::after{
-     color: #508CFF;
+ /* .acc-head::after{
+  color: #508CFF;
+  position: absolute;
+  top: 55%;
+  left: -20px;
+  transform: translateY(-50%);
  }
  .acc-head.active::after{
-      color: #508CFF;
- }
+  color: #508CFF;
+  position: absolute;
+  top: 55%;
+  left: -20px;
+  transform: translateY(-50%);
+ } */
  
  .title{
      font-size: 12px;
@@ -274,15 +299,15 @@ ul li {
  
  }
  
-.Questions{
+.Questions {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 31px 106px;
 }
-.contact{
+.contact {
   background: #E6ECEE;
-  padding: 159px 0 120px;
+  padding: 80px 0 120px;
 }
 .address{
 margin-top: 49px;
@@ -290,16 +315,20 @@ margin-top: 49px;
 .address p,.address span{
   width: 299px;
   color: #363F41;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
   font-size: 18px;
-   font-family: SourceSansPro;
-   margin-bottom: 41px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+  margin-bottom: 41px;
 }
 .address h4{
   color: #000;
+  font-family: "Source Sans Pro";
   font-size: 18px;
-  font-family: SourceSansPro;
-  font-weight: 600;
-  line-height: 0px
+  font-weight: 400;
+  line-height: 4px;
+  letter-spacing: -0.015em;
 }
 .address span{
   margin-bottom: 30px;
@@ -321,6 +350,19 @@ font-weight: 600;
 font-family: 'Montserrat';
 margin-bottom: 19px;
 }
+.contact_size div.form_contact input,
+.contact_size div.form_contact input::placeholder,
+.contact_size div.form_contact textarea,
+.contact_size div.form_contact textarea::placeholder {
+  max-width: 100%;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: rgba(54, 63, 65, 0.36);
+}
 
 .form_contact input[type='text']{
   max-width:210px;
@@ -340,13 +382,13 @@ margin-bottom: 24px;
   margin-left: 18px;
 }
 .form_contact  input[type='email'],.form_contact  input[type='number']{
+  max-width: 444px;
+  width: 100%;
   height: 40px;
   background: #F1F6F6;
   border-radius: 10px;
-  border:none;
+  border: none;
   padding-left: 16px;
-  max-width: 444px;
-  width: 100%;
 }
 .space-inputs {
   margin-bottom: 24px;
@@ -371,11 +413,15 @@ margin-bottom: 24px;
 
 footer{
   padding: 27px;
+  background-color: #F5F5F5;
 }
 
 .footer_container{
   padding-bottom: 20px;
 border-bottom: 1px solid grey;
+}
+.footer_container-logo {
+  width: 78px;
 }
 footer h4 a{
   font-size: 15px;
@@ -466,8 +512,12 @@ footer>p{
     font-size: 30px;
     line-height: 37px;
   }
+  section.Questions {
+    padding-bottom: 32px;
+  }
   section.Questions h1 {
     margin-bottom: 42px;
+    padding: 0;
   }
   .Questions .block {
     margin-top: 0;
@@ -520,10 +570,10 @@ footer>p{
   .accordion-wrapper .acc-head {
     font-size: 15px;
     line-height: 1rem;
-    padding: 10px 14px !important;
+    padding: 19px 14px !important;
   }
-  .contact{
-    padding: 60px 0 21px;
+  .contact {
+    padding: 52px 0 21px;
   }
   .txt_block{
     padding: 20px;
@@ -533,6 +583,33 @@ footer>p{
     font-size: 30px;
     padding: 30px;
   }
+  .footer_container-logo {
+    width: 74px;
+  }
+  .fast_block div:last-child {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .fast_block:not(:first-child) div:first-child img {
+    transform: translateX(-11px);
+  }
+  .fast_block:first-child div:first-child img {
+    transform: translateX(-5px);
+  }
+  .acc-head::after{
+    color: #508CFF;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+   }
+   .acc-head.active::after{
+    color: #508CFF;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+   }
 }
 
 @media screen and (max-width: 767px) {

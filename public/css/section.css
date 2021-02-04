@@ -1,5 +1,5 @@
-p {
-  font-family: SourceSansPro;
+.sec-4__item p {
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
@@ -9,10 +9,10 @@ p {
 }
 
 section.sec-1 {
-  padding-top: 51%;
-  background-image: url(../images/Hero.png);
+  padding-top: 46.3%;
+  background-image: url(../svgs/Hero.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .container__inner {
@@ -22,6 +22,10 @@ section.sec-1 {
 
 h1.sec-1__title.section-title {
   line-height: 59px;
+}
+
+#about {
+  bottom: 80px;
 }
 
 h1.section-title {
@@ -37,8 +41,9 @@ h1.section-title {
 .section-subtitle {
   font-size: 1.333rem;
   line-height: 30px;
-  font-family: SourceSansPro;
-  letter-spacing: -1px;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  letter-spacing: -0.015em;
   color: #363F41;
 }
 
@@ -166,7 +171,7 @@ h1.section-title {
 .secondary-title {
   margin-top: 27px;
   margin-bottom: 0;
-  font-family: SourceSansPro;
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 600;
   font-size: 1.333rem;
@@ -183,7 +188,7 @@ h1.section-title {
 }
 span.check-list-title {
   margin-left: 9px;
-  font-family: SourceSansPro;
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -204,7 +209,7 @@ span.check-list-title {
 }
 .sec-4__footer--text {
   margin-bottom: 0;
-  font-family: SourceSansPro;
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 300;
   font-size: 0.5rem;
@@ -213,6 +218,8 @@ span.check-list-title {
   color: #363F41;
 }
 .sec-4__footer--text .email {
+  font-weight: 400;
+  text-decoration: none;
   color: #4D367D;
 }
 
@@ -242,9 +249,13 @@ span.check-list-title {
   }
 }
 @media screen and (max-width: 992px) {
+  #about {
+    bottom: 36px;
+  }
   section.sec-1 {
     padding-top: 147%;
-    background-image: url(../images/Hero-Mobile.png);
+    /* background-image: url(../images/Hero-Mobile.png); */
+    background-image: url(../svgs/Hero-Mobile.svg);
     background-position-y: -360px;
   }
   section.sec-1 ~ section.corr {
