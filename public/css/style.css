@@ -518,6 +518,8 @@ footer>p{
   .C-Store.container-fluid .container2 img {
     max-width: 300px;
     width: 100%;
+    height: auto;
+    object-fit: cover;
     padding: 20px;
   }
   section.Questions {
