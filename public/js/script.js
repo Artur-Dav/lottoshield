@@ -13,12 +13,25 @@ document.addEventListener('click', e => {
 })
 
 document.querySelectorAll('.secondary-block').forEach(el => {
-  el.addEventListener('mouseenter', e => {
-    el.style.transform = 'scale(1.35)'
-    primaryBlock.style.transform = 'scale(0.75)'
+  el.addEventListener('mouseenter', () => {
+    // el.style.transform = 'scale(1.35)'
+    // primaryBlock.style.transform = 'scale(0.75)'
+    // console.log(el.classList)
+    const p = document.querySelector('.primary-block')
+    p.classList.remove('primary-block')
+    p.classList.add('secondary-block')
+
+    el.classList.remove('secondary-block')
+    el.classList.add('primary-block')
   })
-  el.addEventListener('mouseleave', e => {
-    el.style.transform = 'scale(1)'
-    primaryBlock.style.transform = 'scale(1)'
+  el.addEventListener('mouseleave', () => {
+    const c = document.querySelector('.block-center')
+    c.classList.remove('secondary-block')
+    c.classList.add('primary-block')
+
+    el.classList.add('secondary-block')
+    el.classList.remove('primary-block')
+    // el.style.transform = 'scale(1)'
+    // primaryBlock.style.transform = 'scale(1)'
   })
 })

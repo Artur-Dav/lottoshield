@@ -35,7 +35,7 @@
   background: #FFFFFF;
   box-shadow: 10px 10px 30px 5px rgba(241, 241, 241, 0.76);
   border-radius: 10px;
-  transition: 0.4s;
+  transition: 0.46s;
   cursor: default;
 }
 .carousel-block p {
@@ -44,6 +44,7 @@
   font-weight: 300;
   letter-spacing: -0.015em;
   color: #363F41;
+  transition: 0.46s;
 }
 .carousel-block p.author {
   font-style: italic;
