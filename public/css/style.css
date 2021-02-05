@@ -67,6 +67,7 @@ ul li {
  }
  
   .headlineblock{
+    padding-bottom: 12px;
    align-items: center;
    display: flex;
   }
