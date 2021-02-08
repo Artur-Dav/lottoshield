@@ -1,5 +1,7 @@
 const primaryBlock = document.querySelector('.primary-block')
 
+document.querySelector('.cr-year').innerHTML = new Date().getFullYear()
+
 // Functions
 const toggleMenu = () => {
   document.querySelector('.mobile-nav-bar').classList.toggle('open')
@@ -14,9 +16,6 @@ document.addEventListener('click', e => {
 
 document.querySelectorAll('.secondary-block').forEach(el => {
   el.addEventListener('mouseenter', () => {
-    // el.style.transform = 'scale(1.35)'
-    // primaryBlock.style.transform = 'scale(0.75)'
-    // console.log(el.classList)
     const p = document.querySelector('.primary-block')
     p.classList.remove('primary-block')
     p.classList.add('secondary-block')
@@ -31,7 +30,5 @@ document.querySelectorAll('.secondary-block').forEach(el => {
 
     el.classList.add('secondary-block')
     el.classList.remove('primary-block')
-    // el.style.transform = 'scale(1)'
-    // primaryBlock.style.transform = 'scale(1)'
   })
 })

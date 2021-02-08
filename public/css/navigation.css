@@ -6,7 +6,8 @@ header.header {
   width: 100%;
   z-index: 8;
   background-color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 3px rgba(160, 160, 160, 0.25), 0px 2px 3px rgba(160, 160, 160, 0.25);
+  /* box-shadow: 0px 0px 30px 5px rgba(241, 241, 241, 0.76); */
 }
 .sec-1, h1.privacy_title {
   margin-top: 82px;
@@ -73,7 +74,7 @@ nav.mobile-nav-bar.open #burger {
 }
 nav.mobile-nav-bar.open .mobile-nav-bar__menus {
   height: 315px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 3px rgba(160, 160, 160, 0.25), 0px 2px 3px rgba(160, 160, 160, 0.25);
 }
 
 .mobile-nav-bar__top {

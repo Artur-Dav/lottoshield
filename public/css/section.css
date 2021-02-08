@@ -27,12 +27,15 @@
     margin-top: 56px;
   }
   .sec-1-d > div {
+    flex-direction: column;
     justify-content: center !important;
-    padding-top: 160px;
+    /* padding-top: 160px; */
   }
   .sec-1-d .container__inner {
-    top: 30px;
-    left: none;
+    position: relative;
+    /* top: 30px; */
+    padding-top: 30px;
+    left: 0;
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -53,7 +56,7 @@
 @media screen and (max-width: 788px) {
   .sec-1-d > div {
     justify-content: center !important;
-    padding-top: 230px;
+    /* padding-top: 230px; */
   }
 }
 
