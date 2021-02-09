@@ -3,39 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- My css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/slider.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,200&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   <title>LottoShield</title>
 </head>
 <body>
   <div class="wrapper">
     <!-- Header -->
-    <header>
+    <header class="header">
       <!-- Desktop navigation bar -->
       <nav class="desktop-nav-bar w-100 overflow-hidden container d-flex align-items-center justify-content-between">
         <!-- Desktop logo -->
-        <img class="desktop-nav-bar__logo" src="/svgs/Logo.svg" alt="Logo">
+        <a href="./index.html">
+          <img class="desktop-nav-bar__logo" src="svgs/Logo.svg" alt="Logo">
+        </a>
 
         <div class="desktop-nav-bar__menus-buttons d-flex align-items-center">
           <!-- Desktop menus -->
           <ul class="desktop-nav-bar__menus--list d-flex align-items-center">
-            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#">About</a></li>
-            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#">Pricing</a></li>
-            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#">Review</a></li>
-            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#">FAQ</a></li>
-            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#">Contact</a></li>
+            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#about">About</a></li>
+            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#pricing">Pricing</a></li>
+            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#review">Review</a></li>
+            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#faq">FAQ</a></li>
+            <li class="desktop-nav-bar__menus--item"><a class="desktop-nav-bar__menus--link" href="#contact">Contact</a></li>
           </ul>
 
           <!-- Desktop login sign up buttons -->
@@ -55,10 +66,12 @@
         <!-- Top -->
         <div class="mobile-nav-bar__top h-100 d-flex align-items-center justify-content-between">
           <div class="equal-box">
-            <img id="burger" class="" src="/svgs/Hamburger Menu.svg" alt="Menu">
+            <img id="burger" class="" src="svgs/Hamburger Menu.svg" alt="Menu">
           </div>
           <div class="equal-box d-flex justify-content-center">
-            <img src="/svgs/Mobile-Logo.svg" alt="Mobile logo">
+            <a href="./index.html">
+              <img class="mobile-nav-bar__logo" src="svgs/Mobile-Logo.svg" alt="Mobile logo">
+            </a>
           </div>
           <div class="equal-box">
             <button class="primary-button mobile-small">Sign up</button>
@@ -69,10 +82,10 @@
         <div class="mobile-nav-bar__menus">
           <div class="mobile-nav-bar__menus--inner h-100">
             <ul class="mobile-nav-bar__menus--list">
-              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#">About</a></li>
-              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#">Pricing</a></li>
-              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#">FAQ</a></li>
-              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#">Contact</a></li>
+              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#about">About</a></li>
+              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#pricing">Pricing</a></li>
+              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#faq">FAQ</a></li>
+              <li class="mobile-nav-bar__menus--item text-center"><a class="mobile-nav-bar__menus--link" href="#contact">Contact</a></li>
             </ul>
             <div class="equal-box m-auto">
               <button class="primary-button mobile-small">Log in</button>
@@ -82,7 +95,7 @@
       </nav>
     </header>
 
-    <section class="sec-1 position-relative">
+    <!-- <section class="sec-1 position-relative">
       <div class="w-100 h-100 position-absolute top-0 left-0 d-flex align-items-center">
         <div class="container">
           <div class="container__inner">
@@ -94,76 +107,69 @@
           </div>
         </div>
       </div>
+      <div class="position-absolute" id="about"></div>
+    </section> -->
+
+    <section class="sec-1-d position-relative">
+      <div class="container h-100 d-flex justify-content-end position-relative">
+        <div class="container__inner">
+          <h1 class="section-title sec-1__title mb-3">Peace of Mind for Lottery Retailers</h1>
+          <span class="section-subtitle">The world's first automated solution for lottery loss prevention.</span>
+          <div class="sec-1-button">
+            <button class="primary-button">Learn more</button>
+          </div>
+        </div>
+        <img class="sec-1-d__image" src="images/Hero__desk.png" alt="Hero">
+      </div>
     </section>
 
     <section class="corr">
+      <div id="about"></div>
       <div class="container container2">
         <div class="headline">
-        <h1>Complete lottery security</h1>
-      </div>
-        <div class="row">
+          <h1>Complete lottery security</h1>
+        </div>
+        <div class="container-2-row row">
           <div class="col-md-6 col-xs-12 headlineblock">
-            <div>
-            <p>Theft of scratcher tickets can result in tens of thousands of dollars in losses before the store owner is aware of the problem; but using handwritten logs and back-office software can be time-consuming and often inaccurate.
-          </p>
-          <p>
-                LottoShield is a patent-pending technology that eliminates the need for handwritten logs. It automatically tracks changes in scratcher inventory and reconciles with sales, alerting you at the first sign of a problem so you can take steps to prevent further loss.</p>
-                </div>
+            <div class="row__text-block">
+              <p>Theft of scratcher tickets can result in tens of thousands of dollars in losses before the store owner is aware of the problem; but using handwritten logs and back-office software can be time-consuming and often inaccurate.</p>
+              <p>LottoShield is a patent-pending technology that eliminates the need for handwritten logs. It automatically tracks changes in scratcher inventory and reconciles with sales, alerting you at the first sign of a problem so you can take steps to prevent further loss.</p>
+            </div>
           </div> 
           <div class="col-md-6 col-xs-12">
-            
             <div class="fast">
-            <div class="fast_block">
-              <div>
-              <img src="images/Icon_Fast.png" width="85">
-            </div>
-              <div>
-              <h4>Fast</h4>
-              <p>Takes less than 5 minutes to install, connects to your existing POS system,  and automates detailed daily audits.</p>
-            </div>
-            </div>
               <div class="fast_block">
-              <div>
-              <img src="images/Icon_Smart.png" width="85">
-            </div>
-              <div>
-              <h4>Smart</h4>
-              <p>Automated monitoring of stockroom packs, draw sales, and payouts. Pinpoint discrepancies from anywhere,  all in one comprehensive dashboard.</p>
-            </div>
-            </div>
+                <div>
+                  <img src="svgs/Fast_icon.svg" height="52">
+                </div>
+                <div>
+                  <h4>Fast</h4>
+                  <p>Takes less than 5 minutes to install, connects to your existing POS system,  and automates detailed daily audits.</p>
+                </div>
+              </div>
+              <div class="fast_block">
+                <div>
+                  <img src="svgs/Smart_icon.svg" height="52">
+                </div>
+                <div>
+                  <h4>Smart</h4>
+                  <p>Automated monitoring of stockroom packs, draw sales, and payouts. Pinpoint discrepancies from anywhere,  all in one comprehensive dashboard.</p>
+                </div>
+              </div>
               <div class="fast_block fast_blocklast">
-              <div>
-              <img src="images/Icon_Reliable.png" width="85">
-            </div>
-              <div>
-              <h4>Reliable</h4>
-              <p>Automatic reconciliation with state lottery. Full support for <span class="security_bold">Gilbarco and Verifone POS systems. </span>Software updates included with your subscription.</p>
-            </div>
-            </div>
+                <div>
+                  <img src="svgs/Reliable_icon.svg" height="52">
+                </div>
+                <div>
+                  <h4>Reliable</h4>
+                  <p>Automatic reconciliation with state lottery. Full support for <span class="security_bold">Gilbarco and Verifone POS systems. </span>Software updates included with your subscription.</p>
+                </div>
+              </div>
           </div>
           </div> 
         </div>
       </div>
     </section>
-
-    <!-- <section class="sec-2 corr">
-      <h1 class="section-title text-center pt-1">Complete lottery security</h1>
-      <div class="sec-2__content container row m-auto">
-        <div class="sec-2__box col-12 col-lg-6 flex align-items-center">
-          <div class="sec-2__box--inner">
-            <p class="mw-100">Theft of scratcher tickets can result in tens of thousands of dollars in losses before the store owner is aware of the problem; but using handwritten logs and back-office software can be time-consuming and often inaccurate.</p>
-            <p class="mw-100">LottoShield is a patent-pending technology that eliminates the need for handwritten logs. It automatically tracks changes in scratcher inventory and reconciles with sales, alerting you at the first sign of a problem so you can take steps to prevent further loss.</p>
-          </div>
-        </div>
-        <div class="sec-2__box col-12 col-lg-6 flex justify-content-center">
-          <div class="sec-2__box--items">
-            <div class="sec-2__box--item"></div>
-            <div class="sec-2__box--item"></div>
-            <div class="sec-2__box--item"></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section>
       <div class="container-fluid  C-Store ">
@@ -172,7 +178,7 @@
           <div class="col-md-8 col-xs-12">
             <h1>Invented <span>by</span> C-Store Owners,<br> <span>for</span> C-Store Owners.</h1>
           </div> 
-          <div class="col-md-4 col-xs-12 d-flex justify-content-end">
+          <div class="col-md-4 col-xs-12 d-flex justify-content-end s1">
             <img src="images/Frame 9.png" width="381">
           </div> 
         </div>
@@ -180,58 +186,12 @@
       </div>
     </section>
 
-    <!-- <section class="step">
-      <h1>How it works</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-12">
-            <div class="img">
-            <img src="images/icon 1.svg">
-            </div>
-            <h4>Install</h4>
-            <p>Connect the LottoShield device to your existing scanner and POS. </p>
-            <p>You'll also need to install the LottoShield Sales Tracker on your back-office computer — a light-weight application that will track lottery sales.
-            </p>
-          </div>
-          <div class="col-md-3 col-xs-12">
-             <div class="img">
-             <img src="images/icon 2.svg">
-             <img src="images/Arrow 1.svg" class="arrow">
-           </div>
-             <h4>Scan</h4>
-             <p>Your employees take inventory by scanning your scratchers at the end of their shift using the same scanner they use for sales.</p>
-             <p>LottoShield automatically calculates your remaining inventory and reconciles with sales to detect missing tickets.</p>
-          </div>
-          <div class="col-md-3 col-xs-12">
-             <div class="img">
-            <img src="images/icon 3.svg">
-            <img src="images/Arrow 1.svg" class="arrow">
-          </div>
-            <h4>Reconcile</h4>
-            <p>LottoShield receives daily reports from your state lottery and checks to make sure your draw sales and lottery payouts match official records.</p>
-            <p>LottoShield also uses these reports to monitor the scratcher packs in your stockroom and to detect any scratcher packs that have been activated but are not being sold.</p>
-          </div>
-          <div class="col-md-3 col-xs-12">
-            <div class="img">
-            <img src="images/icon 4.svg">
-            <img src="images/Arrow 1.svg" class="arrow">
-            </div>
-            <h4>Investigate</h4>
-            <p>Daily emails will show you the overages or shortages on scratchers, draw tickets, and payouts from the previous day.
-            </p>
-            <p>The dashboard makes it easy to investigate issues. Detailed reports and timelines help you pinpoint root causes quickly.</p>
-          </div>
-          <button class="Request">Request a demo</button>
-        </div>
-      </div>
-    </section> -->
-
     <section class="sec-4">
       <h1 class="section-title text-center">How it works</h1>
       <div class="sec-4__items container row">
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-1.svg" alt="Icon 1">
+            <img class="sec-4__item--icon" src="svgs/Icon-1.svg" alt="Icon 1">
           </div>
           <h4 class="item-title text-center mb-2">Install</h4>
           <p class="item-text mb-2">Connect the LottoShield device to your existing scanner and POS.</p>
@@ -239,7 +199,7 @@
         </div>
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-2.svg" alt="Icon 2">
+            <img class="sec-4__item--icon" src="svgs/Icon-2.svg" alt="Icon 2">
           </div>
           <h4 class="item-title text-center mb-2">Scan</h4>
           <p class="item-text mb-2">Your employees take inventory by scanning your scratchers at the end of their shift using the same scanner they use for sales.</p>
@@ -247,7 +207,7 @@
         </div>
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-3.svg" alt="Icon 3">
+            <img class="sec-4__item--icon" src="svgs/Icon-3.svg" alt="Icon 3">
           </div>
           <h4 class="item-title text-center mb-2">Reconcile</h4>
           <p class="item-text mb-2">LottoShield receives daily reports from your state lottery and checks to make sure your draw sales and lottery payouts match official records.</p>
@@ -255,7 +215,7 @@
         </div>
         <div class="sec-4__item col-xl-3 col-md-6 col-12">
           <div class="sec-4__item--icon-box w-100 d-flex justify-content-center">
-            <img class="sec-4__item--icon" src="/svgs/Icon-4.svg" alt="Icon 4">
+            <img class="sec-4__item--icon" src="svgs/Icon-4.svg" alt="Icon 4">
           </div>
           <h4 class="item-title text-center mb-2">Investigate</h4>
           <p class="item-text mb-2">Daily emails will show you the overages or shortages on scratchers, draw tickets, and payouts from the previous day.</p>
@@ -267,13 +227,14 @@
           <button class="primary-button">Request a demo</button>
         </div>
       </div>
-      <hr class="hor-line d-md-none">
+      <div id="pricing"></div>
+      <hr class="hor-line">
       <header class="d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center position-relative">
           <span class="sup-title position-absolute">$</span>
           <span class="title">39</span>
         </h1>
-        <span class="sub-title">per store per month</span>
+        <span class="sub-title">per month per store</span>
       </header>
       <h4 class="secondary-title text-center d-none d-lg-block">Get all of LottoShield’s benefits with a single monthly subscription.</h4>
       <h4 class="secondary-title text-center d-lg-none">Maximize your sales. Minimize your losses.</h4>
@@ -281,35 +242,35 @@
         <div class="check-list__items container row m-auto">
           <div class="check-list__item col-lg-4 col-12">
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">No hidden fees</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">$39 per additional location</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Cancel any time</span>
             </div>
           </div>
           <div class="check-list__item col-lg-4 col-12">
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Includes software & device upgrades</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Automatic econciliation with state records</span>
             </div>
           </div>
           <div class="check-list__item col-lg-4 col-12">
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">View all your locations in one place</span>
             </div>
             <div class="check-list__item d-flex align-items-center">
-              <img src="/svgs/check.svg" alt="Check">
+              <img src="svgs/check.svg" alt="Check">
               <span class="check-list-title">Customizable SMS & email alerts</span>
             </div>
           </div>
@@ -321,45 +282,47 @@
         </div>
         <div class="sec-4__footer">
           <p class="sec-4__footer--text text-center">Subscription includes one register in one location. Add on registers in the same store for $10, or add a new location for $39 more.</p>
-          <p class="sec-4__footer--text text-center">You can cancel at any time. Just contact our support team at <span class="email">sales@lottoshield.com</span> to stop payments and send back your device.</p>
+          <p class="sec-4__footer--text text-center">You can cancel at any time. Just contact our support team at <a class="email" href="mailto: sales@lottoshield.com">sales@lottoshield.com</a> to stop payments and send back your device.</p>
         </div>
       </div>
     </section>
-    <section class="sec-5">
+    <section class="sec-5" id="review">
       <h1 class="section-title text-center">Testimonials</h1>
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">1</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">2</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">3</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">4</div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide d-flex justify-content-center align-items-center">5</div>
+
+      <!-- Desktop carousel -->
+      <div class="carousel-wrapper-desktop container d-none d-lg-block">
+        <div class="carousel-wrapper-desktop__inner w-100">
+          <div class="w-100 h-100 position-absolute top-0 left-0">
+            <div class="d-flex h-100 align-items-center justify-content-between">
+              <div class="secondary-block carousel-block">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p>
+              </div>
+              <div class="primary-block block-center carousel-block">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p>
+              </div>
+              <div class="secondary-block carousel-block">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p>
+                <!-- <p>“Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit, sed<br />do eiusmod tempor incididunt<br />ut labore et dolore magna<br />aliqua. Ut enim ad minim<br />veniam, quis nostrud<br />exercitation ullamco laboris<br />nisi ut aliquip ex ea commodo<br />consequat.”</p><p class="author">– LS User</p> -->
+              </div>
+            </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- Mobile carousel -->
+      <div class="carousel-wrapper d-lg-none d-block container m-auto">
+        <div class="center">
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+          <div class="center-box d-flex flex-column align-items-center"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p><p class="author">– LS User</p></div>
+        </div>
       </div>
     </section>
 
-    <section class="Questions">
-      <div class="container pt-5 block">
+    <section class="Questions" id="faq">
+      <div class="container pt-lg-5 block">
       <h1>Frequently Asked Questions</h1>
-      <div class="accordion-wrapper ">
+      <div class="accordion-wrapper">
         <div class="acc-head card p-3 rounded-0 accord-bg accord-bg">
           Does LottoShield know when my packs finish?
         </div>
@@ -380,7 +343,7 @@
         Can I track packs that are in the stock room?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          Yes. LottoShield automatically checks your state lottery report every day. If there are activated packs that are not on the sales floor (i.e. missing from the stock room) you will be notified.
         </div>
       </div>
         <div class="accordion-wrapper">
@@ -388,15 +351,7 @@
           How will I get notified if there's an issue?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
-        </div>
-      </div>
-        <div class="accordion-wrapper">
-        <div class="acc-head card p-3 rounded-0 accord-bg">
-          Some title #3
-        </div>
-        <div class="acc-body rounded-0 accord-bg1">
-         #3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          Every morning you'll receive an email summary of the previous day highlighting any issues. You can also customize to be notified by SMS or email right away if we detect an issue.
         </div>
       </div>
         <div class="accordion-wrapper">
@@ -404,7 +359,7 @@
           How can I investigate an issue?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          LottoShield provides a time frame during which the loss happened. You can check your security footage during this period to find the cause of the discrepancy and take action to prevent further loss.
         </div>
       </div>
         <div class="accordion-wrapper">
@@ -412,12 +367,80 @@
           What if an issue gets resolved?
         </div>
         <div class="acc-body rounded-0 accord-bg1">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet blanditiis culpa ducimus, fuga labore non repellat veritatis? Dignissimos, officiis!
+          You can easily click 'Resolve' next to any item on a report and the amount will be removed from your monthly totals.
         </div>
       </div>
        
     </div>
     </section>
+
+    <section class="contact" id="contact">
+      <div class="container2">
+        <h1>Still have questions?</h1>
+        <div class="row contact_size">
+          <div class="col-md-6 address">
+            <p class="">Interested in a demo or just want to find out more? Contact us and our team will be happy to get back to you.</p>
+            <div class="d-none d-lg-block">
+              <h4>Address</h4>
+              <span>110 Ryan Industrial Ct., San Ramon, California 9458</span>
+              <h4>Phone</h4>
+              <span>+1(818)674-2128</span>
+              <h4>Email</h4>
+              <span>sales@lottoshield.com</span>
+            </div>
+          </div>
+          <div class="col-md-6 form_contact">
+            <h2 class="text-center text-lg-left">Contact us</h2>
+            <div class="d-flex">
+              <input class="space-inputs horizontal-field" type="text" name="" placeholder="First name"> 
+              <input class="space-inputs horizontal-field name" type="text" name="" placeholder="Last name"> 
+            </div>
+            <input class="space-inputs" type="email" name="" placeholder="Email"> 
+            <input class="space-inputs" type="number" name="" placeholder="Phone"> 
+            <textarea placeholder="Message"></textarea>
+  
+            <div class="form-contact__button">
+              <button class="primary-button">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="icons-block d-lg-none row ">
+          <div class="col-6 d-flex justify-content-center flex-column">
+            <a class="d-flex justify-content-center" href="tel: +18186742128"><img src="svgs/call.svg" alt="Call"></a>
+            <h4 class="icons-block__text text-center">Call</h4>
+          </div>
+          <div class="col-6 d-flex justify-content-center flex-column">
+            <a class="d-flex justify-content-center" href="mailto: sales@lottoshield.com"><img src="svgs/mail.svg" alt="Mail"></a>
+            <h4 class="icons-block__text text-center">Email</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <footer>
+    <div class="container footer_container">
+      <div class="row">
+        <div class="row-elem col-md-4 col-12 col-xs-push-12 d-flex justify-content-start align-items-center">
+          <h4><a href="privacy.html">Privacy Policy</a></h4>
+          <h4 class="foot"><a href="terms.html">Website Terms of use</a></h4>
+        </div>
+        <div class="row-elem col-md-4 d-flex col-xs-pull-12 justify-content-center align-items-center">
+          <img class="footer_container-logo" src="svgs/Mobile-Logo.svg">
+        </div>
+        <div class="row-elem col-md-4 d-flex col-xs-push-12 justify-content-end align-items-center">
+          <h4><a href="#">Help Desk</a></h4>
+          <h4 class="foot"><a href="#">Feedback</a></h4>
+        </div>
+      </div>
+    </div>
+    <div class=" d-flex icon justify-content-between">
+      <a class="footer-social-m-icon fb-icon" href="https://www.facebook.com/lottoshield" target="_blank"></a>
+      <a class="footer-social-m-icon twitter-icon" href="https://twitter.com/lottoshield" target="_blank"></a>
+      <a class="footer-social-m-icon in-icon" href="https://www.linkedin.com/company/lottoshield" target="_blank"></a>
+      <a class="footer-social-m-icon youtube-icon" href="https://www.youtube.com/channel/UCWok1BgLRgyKeVDiRkAl6IA" target="_blank"></a>
+    </div>
+    <p>© LottoShield, <span class="cr-year"></span></p>
+  </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -426,33 +449,45 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-  $('.acc-head').click(function(){
-    $(this).next().slideToggle(500);
-    $(this).toggleClass('active');
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.acc-head').click(function(){
+      $(this).next().slideToggle(500);
+      $(this).toggleClass('active');
+    })
   })
-})
   </script>
-  <script src="/js/script.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
   <script>
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    const src = './svgs/arr-right.svg'
+
+    $('.center').slick({
+      centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 3,
+      arrows: false,
+      fade: false,
+      responsive: [
+        {
+          breakpoint: 1050,
+          settings: {
+            draggable: false,
+            dots: true,
+            dotsClass: 'slide-dots',
+            prevArrow: `<img style="transform: rotate(180deg) translateY(50%); position: absolute; top: 50%; left: 23px; z-index: 2" src="${src}" />`,
+            nextArrow: `<img style="position: absolute; top: 50%; right: 23px; z-index: 2; transform: translateY(-50%)" src="${src}" />`,
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        },
+      ]
     })
   </script>
 </body>

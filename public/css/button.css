@@ -11,6 +11,7 @@ button {
   letter-spacing: -0.015em;
   outline: none !important;
   cursor: pointer;
+  transition: 0.3s;
 }
 button.small {
   height: 40px;
@@ -30,9 +31,14 @@ button.mobile-small {
 }
 
 button.primary-button {
-  border: none;
+  border: 1px solid #72C546;
   background-color: #72C546;
   color: #fff;
+}
+button.primary-button:hover {
+  border: 1px solid #72C546;
+  background-color: #fff;
+  color: #72C546;
 }
 
 button.outline-primary-button {
@@ -40,11 +46,21 @@ button.outline-primary-button {
   background-color: #fff;
   color: #72C546;
 }
+button.outline-primary-button:hover {
+  border: 1px solid #fff;
+  background-color: #72C546;
+  color: #fff;
+}
 
 @media screen and (max-width: 992px) {
   button.primary-button {
     height: 32px;
     line-height: 32px;
     font-size: 0.8333rem;
+  }
+  button.primary-button:hover {
+    border: 1px solid #756EC9;
+    background-color: #fff;
+    color: #756EC9;
   }
 }
