@@ -216,6 +216,7 @@ ul li {
 .accordion-wrapper {
   position: relative;
   margin-bottom: .5rem;
+  cursor: pointer;
 }
 .accordion-wrapper:last-child {
   margin-bottom: 0;
@@ -242,12 +243,12 @@ ul li {
    top: 20px;
    transition: .4s;
  }
- .acc-body
- {
-   padding: 1rem;
-   display: none;
-   background: #dadee2;
- }
+ .acc-body {
+  padding: 1rem;
+  display: none;
+  background: #dadee2;
+  cursor: default;
+}
  
  
  .block{
